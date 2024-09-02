@@ -3,10 +3,10 @@ class numeroEntero:
         x = abs(a)
         y = abs(b)
 
-    while y != 0:
-        remainder = x % y
-        x = y
-        y = remainder
+        while y != 0:
+            remainder = x % y
+            x = y
+            y = remainder
         return x
 
 
