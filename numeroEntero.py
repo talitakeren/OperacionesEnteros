@@ -1,5 +1,5 @@
 class numeroEntero:
-    def MCD(self,a,b):
+    def MCD(self, a, b):
         x = abs(a)
         y = abs(b)
 
@@ -9,10 +9,11 @@ class numeroEntero:
             y = remainder
         return x
 
+    def mcm(self, a, b):
+        # mcd*mcm =a * b
+        return a * b / self.MCD(a, b)
+
 
 if __name__ == '__main__':
-    numero1 = int(input("Primer numero: "))
-    numero2 = int(input("Segundo numero: "))
-
-operacion = numeroEntero()
-print(f"MCD de {numero1} {numero2} es {operacion.MCD(numero1, numero2)}")
+    operacion = numeroEntero()
+    print(f"MCD de {5} {10} es {operacion.MCD(5, 10)}")
